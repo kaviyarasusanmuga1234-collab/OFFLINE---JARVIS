@@ -1,0 +1,34 @@
+# ══════════════════════════════════════════════════════
+#  JARVIS AI — Python Dependencies
+#  Install: pip install -r requirements.txt
+# ══════════════════════════════════════════════════════
+
+# ── Core Voice (No API key needed) ──────────────────
+SpeechRecognition>=3.10.0      # Google STT (free tier, no key)
+pyttsx3>=2.90                  # Offline TTS — no API key at all
+
+# ── Computer Vision & Gestures ──────────────────────
+opencv-python>=4.8.0           # Camera capture & display
+mediapipe>=0.10.0              # Hand landmark detection
+numpy>=1.24.0                  # Numerical operations
+
+# ── Mouse & Keyboard Control ────────────────────────
+pyautogui>=0.9.54              # Cross-platform mouse/keyboard automation
+Pillow>=10.0.0                 # Required by pyautogui for screenshots
+
+# ── System Monitoring ───────────────────────────────
+psutil>=5.9.0                  # CPU, RAM, disk, USB, processes
+
+# ── Audio & Clap Detection ──────────────────────────
+sounddevice>=0.4.6             # Audio input stream for clap detection
+
+# ── Weather (no API key — uses wttr.in) ─────────────
+requests>=2.31.0               # HTTP client for wttr.in weather
+
+# ── Windows-specific (optional) ─────────────────────
+# pywin32>=306                 # Uncomment on Windows for win32api
+# pygetwindow>=0.0.9           # Window management (optional)
+
+# ── Optional: Offline STT (no internet needed) ──────
+# vosk>=0.3.44                 # Fully offline speech recognition
+# pyaudio>=0.2.13              # Required by vosk
